@@ -75,3 +75,7 @@ Status InitArray(Array& A,int dim,...) {//构建维度为dim的数组A；
 
 ### 取出元素
 
+{% hint style="info" %}
+kkkkkkk
+{% endhint %}
+
