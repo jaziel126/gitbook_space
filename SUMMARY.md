@@ -4,5 +4,3 @@
 
 ## 数组与广义表
 
-* [index](shu-zu-yu-guang-yi-biao/untitled.md)
-
