@@ -26,7 +26,7 @@ typedef Array1[n];
 
   一般以行序为主
 
-  **2.2存储结构**
+### 2.2存储结构
 
 ```cpp
 #include<stdarg.h>//提供宏va_list、va_start、va_end;
