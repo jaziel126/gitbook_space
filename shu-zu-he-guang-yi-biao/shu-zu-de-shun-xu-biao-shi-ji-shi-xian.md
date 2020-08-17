@@ -1,6 +1,6 @@
 # 数组的顺序表示及实现
 
-## 1.数组的定义
+## 数组的定义
 
 在c语言中，一个二位数组可以定义为一个一维数组类型分量的一位数组，即：
 
@@ -17,16 +17,16 @@ typedef Array1[n];
 
 需要注意，数组一旦被定义，它的维数和维界就**不再改变**，除了初始化和销毁之外，数组只有存取和修改元素值的操作；
 
-## 2.顺序存储表示和实现
+## 顺序存储表示和实现
 
-### 2.1存储方式
+### 存储方式
 
 * 以行序为主
 * 以列序为主
 
   一般以行序为主
 
-### 2.2存储结构
+### 存储结构
 
 ```cpp
 #include<stdarg.h>//提供宏va_list、va_start、va_end;
@@ -41,9 +41,9 @@ typedef struct{
 
 > va\_list ap; 定义va\_list类型变量 va\_start\(ap,dim\);初始化ap,dim为...之前的参数 va\_arg\(ap,ElemType\);返回这个类型的值；ElemType为...数据类型 va\_end\(ap\);释放ap [va\_start和va\_end使用详解](https://www.cnblogs.com/hanyonglu/archive/2011/05/07/2039916.html)
 
-## 3.基本操作
+## 基本操作
 
-### 3.1生成给定维度和维界的数组
+### 生成给定维度和维界的数组
 
 步骤：
 
@@ -81,7 +81,7 @@ Status InitArray(Array& A, int dim, ...) {
 }
 ```
 
-### 3.2销毁数组
+### 销毁数组
 
 ```cpp
 //销毁数组A
@@ -99,7 +99,7 @@ Status DestoryArray(Array &A) {
 }
 ```
 
-### 3.3求元素地址
+### 求元素地址
 
 ```cpp
 //求元素e，就是va_list变长参数表指出的元素在数组中的位置
@@ -113,7 +113,7 @@ Status LocatArray(Array A, va_list ap, int &off) {
 }
 ```
 
-### 3.4存入元素
+### 存入元素
 
 ```cpp
 //存入数
@@ -128,7 +128,7 @@ Status AssignArray(Array& A, ElemType e, ...) {
 }
 ```
 
-### 3.5取出元素
+### 取出元素
 
 ```cpp
 //取出数
